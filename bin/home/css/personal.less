@@ -1,0 +1,290 @@
+body{
+  background-color: #F5F8FA;
+}
+.mask2{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #97AAA2, #35384F);
+  z-index: 999;
+  .prompt2{
+      position: absolute;
+      width: 250px;
+      height: 130px;
+      top: 50%;
+      left: 50%;
+      border-radius: 8px;
+      transform: translate(-50%,-50%);
+      background-color: #fff;
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, .4);
+      text-align: center;
+      padding-top: 35px;
+      box-sizing: border-box;
+      .prompt2Title{
+          color:#D9534F;
+          font-weight: 600;
+          font-size: 20px;
+      }
+      .prompt2Title2{
+          font-size: 20px;
+          color:#000;
+          margin-top: 10px;
+      }
+  }
+}
+
+.adBanner{
+  width: 1200px;
+  height: 60px;
+  img{
+    width: 100%;
+  }
+}
+button{
+  outline: 0;
+  border: 0;
+}
+.current{
+  color: #000!important;
+  background-color: #fff;
+}
+
+.personalMain{
+  width: 100%;
+  height: 600px;
+  margin: 10px 0 20px;
+  .leftMain{
+    // border-top: 5px solid #FF2832;
+    float: left;
+    width: 240px;
+    height: 100%;
+    background-color: #2B2B2B;
+    .leftMainTop{
+      height: 150px;
+      line-height: 150px;
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+      .leftName{
+        font-size: 40px;
+        color: #FF2832;
+      }
+      
+    }
+    .leftMainTitle{
+      ul{
+        padding-left: 20px;
+        li{
+          text-align: center;
+          width: 100%;
+          line-height: 60px;
+          font-size: 25px;
+          box-sizing: border-box;
+          cursor: pointer;
+          color:#fff;
+        }
+      }
+    }
+  }
+  .rightMain{
+    float: right;
+    width: 960px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 30px 35px;
+    .rightMains{
+      box-sizing: border-box;
+      display: none;
+    }
+    .profile{
+      display: none;
+      h2{
+        padding: 5px 0 8px;
+        border-bottom: 2px solid #DDDDDD;
+        position: relative;
+      }
+      h2::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 95px;
+        height: 2px;
+        background-color: #FF2832;
+      }
+      .moneyBox{
+        height: 300px;
+        width: 100%;
+        background-color: #fff;
+        padding: 50px 0 0 200px;
+        .moneyBoxText{
+          padding: 20px 0 20px 15px;
+          font-size: 20px;
+          #myMoney{
+            color: #FF2832;
+            font-weight: 600;
+            margin-left: 20px;
+          }
+        }
+        .moneyRecharge{
+          padding: 20px 0 20px 15px;
+          font-size: 20px;
+          #getMoney{
+            padding: 8px 10px;
+            margin-left: 20px;
+          } 
+          i{
+            color: #ff2832;
+            margin-left: 10px;
+          }
+          .msg{
+            font-size: 16px;
+           
+          } 
+        }
+        #moneyBtn{
+          margin-top: 15px;
+          margin-left: 210px;
+          padding: 8px 30px;
+          font-size: 18px;
+          border-radius: 5px;
+          border: 0;
+          outline: 0;
+          background-color: #FF2832;
+          color: #fff;
+          cursor: pointer;
+        }
+        #moneyBtn:hover{
+          opacity: .8;
+        }
+      }
+    }
+    .myOrder{
+      position: relative;
+      .myOrderTitle{
+        li{
+          float: left;
+          padding: 14px 30px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        .select{
+          position: relative;
+        }
+        .select::after{
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -2px;
+          width: 105px;
+          height: 3px;
+          background-color: #FF2832;
+        }
+      }
+      .orderHandleTitle{
+        position: absolute;
+        right: 52px;
+        top: 14px;
+        font-size: 16px;
+      }
+      .orderHandleTitle::after{
+         content: '';
+          position: absolute;
+          left: -18px;
+          bottom: -16px;
+          width: 105px;
+          height: 3px;
+          background-color: #FF2832;
+      }
+      .myOrderContent{
+        overflow-y: auto;
+        height: 480px;
+        width: 100%;
+        .myOrderContents{
+          padding: 10px;
+          .goodList{
+            .none{
+              width: 100%;
+              height: 300px;
+              margin-top: 15px;
+              text-align: center;
+              padding: 20px 0;
+              box-sizing: border-box;
+              h2{
+                margin-top: 15px;
+                color: #B2B2B2;
+                a{
+                  color: #ff2832;
+                  font-weight: 600;
+                }
+              }
+            }
+            li:last-child{
+              border-bottom: 0;
+            }
+            li{
+              padding: 10px;
+              height: 100px;
+              width: 95%;
+              margin: 0 auto 8px;
+              background-color: #fff;
+              position: relative;
+              border-bottom: 2px solid #DDDDDD;
+              .num{
+                float: left;
+                margin-right: 30px;
+                font-weight: 600;
+                font-size: 18px;
+              }
+              .goodListImg{
+                width: 100px;
+                float: left;
+                margin-right: 20px;
+              }
+              .goodListTitle{
+                padding: 5px 0;
+                width: 450px;
+                font-size: 18px;
+                margin-bottom: 10px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+              .goodListPrice{
+                font-size: 16px;
+                .priceSpan{
+                  color: #FF2832;
+                  font-weight: 600;
+                }
+              }
+              .orderInfo{
+                margin-top: 10px;
+                color: #969696;
+                .orderID{
+                  margin-right: 5px;
+                }
+              }
+              .buyBtn,.shouhuoBtn,.commentBtn,.deleteBtn{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 10px;
+                padding: 8px 14px;
+                background-color: #FF2832;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 600;
+                border-radius: 10px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}

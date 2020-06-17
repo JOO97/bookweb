@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后台首页</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+</head>
+
+<body>
+    <div class="mask" style="display: none">
+        <div class="prompt">
+            <div class="promptTitle">
+                是否要退出后台管理系统
+            </div>
+            <div class="promptBtn">
+                <button class="yes">确定</button>
+                <button class="cancel">取消</button>
+            </div>
+        </div>
+    </div>
+    <div class="mask2" style="display: none">
+        <div class="prompt2">
+            <p class="prompt2Title">非法登录</p>
+            <p class="prompt2Title2">3s后进入后台登录页</p>
+        </div>
+    </div>
+    <div class="top">
+        <ul class="topRight">
+            <li>欢迎进入当当网后台管理系统!</li>
+            <li class="admin"></li>
+            <!--            <li><i class="iconfont icon-tuichu"></i> 退出</li>-->
+        </ul>
+    </div>
+    <div class="center">
+        <!-- <div class="test"></div> -->
+        <div class="menu">
+            <div class="menuTop">
+                <p>当当网后台管理系统</p>
+            </div>
+            <ul class="menuBot">
+                <li class="menuTitles current"><i class="iconfont icon-shouye"></i> 后台首页</li>
+                <li class="menuTitles"><i class="iconfont icon-shangchuan"></i> 图书上传</li>
+                <li class="menuTitles bookManagement"><i class="iconfont icon-mybook"></i> 图书管理</li>
+                <li class="menuTitles userManagement"><i class="iconfont icon-yonghu1"></i> 用户管理</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="menuContents index">
+                <div class="indexTitle">
+                    <span><i class="iconfont icon-shouye1"></i>主页</span>
+                </div>
+                <div class="msg">
+                    <div class="msg1">
+                        <i class="iconfont icon-guanliyuan"> 欢迎管理员：</i><span class="welcome"></span>
+                    </div>
+                </div>
+                <div class="msg3 ">
+                    <div class="msg3Title">系统通知</div>
+                    <ul class="msg3Content">
+                        <li>xxxxxxxxxxxxxxxxxxxx</li>
+                        <li>xxxxxxxxxxxxxxxxxxxx</li>
+                    </ul>
+
+                </div>
+                <div class="msg2">
+                    <div class="msg2Title">数据统计</div>
+                    <div class="msg2Content">
+                        <div class="msg2Contents">
+                            <h5>管理员数</h5>
+                            <h4>05</h4>
+                        </div>
+                        <div class="msg2Contents">
+                            <h5>会员数</h5>
+                            <h4>10</h4>
+                        </div>
+                        <div class="msg2Contents">
+                            <h5>商品数</h5>
+                            <h4>10</h4>
+                        </div>
+                        <div class="msg2Contents">
+                            <h5>订单数</h5>
+                            <h4>10</h4>
+                        </div>
+                        <div class="msg2Contents">
+                            <h5>商品类别</h5>
+                            <h4>10</h4>
+                        </div>
+                        <div class="msg2Contents">
+                            <h5>文章数</h5>
+                            <h4>10</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuContents bookUpload" style="display: none;">
+                <h2>书籍信息</h2>
+                <div class="title">
+                    <label for="bookTitle">书籍标题:
+                        <input type="text" id="bookTitle" name="title" placeholder="请输入书籍标题">
+                    </label>
+                </div>
+                <div class="introduction">
+                    <label for="bookInt">书籍简介:
+                        <input type="text" id="bookInt" name="bookInt" placeholder="请输入书籍简介">
+                    </label>
+                </div>
+                <div class="priceBox">
+                    <label for="presentPrice">书籍现价:
+                        <input type="text" id="presentPrice" name="presentPrice" placeholder="请输入书籍现价">
+                    </label>
+                    <label for="price">书籍原价:
+                        <input type="text" id="price" name="price" placeholder="请输入书籍原价">
+                    </label>
+                </div>
+                <div class="sort">
+                    书籍分类:
+                    <select id="bookSort">
+                        <option value="请选择">请选择</option>
+                        <option value="童书">童书</option>
+                        <option value="励志">励志</option>
+                        <option value="文学">文学</option>
+                        <option value="考试">考试</option>
+                    </select>
+                </div>
+                <div class="bookImgBox">
+                    <label for="bookImg">书籍图片:
+                        <input type="file" id="bookImg">
+                        <button class="imgBtn">图片</button>
+                    </label>
+                    <!-- <label for="bookImg">大图片:
+                        <input type="file" id="bookImgb"">
+                        <button class="imgbBtn">大图片</button>
+                    </label> -->
+                    <label for="bookImg">详情图片:
+                        <input type="file" id="bookInfoImg">
+                        <button class="imginfoBtn">详情图片</button>
+                    </label>
+                </div>
+                <div class="infoBox">
+                    <label for="bookInfo">书籍详情:
+                        <textarea name="bookInfo" id="bookInfo" cols="30" rows="10" placeholder="请输入书籍详情"></textarea>
+                    </label>
+                    <button id="uploadBtn">提 交</button>
+                </div>
+            </div>
+            <div class="menuContents bookList" style="display: none">
+                <div class="bookListTitle">
+                    <span><i class="iconfont icon-mybook"></i>图书管理</span>
+                </div>
+                <div class="bookListMain">
+                    <div class="bookListBtn">
+                        <!-- <button class="delAll">批量删除</button> -->
+                        <!-- <input type="checkbox" name="" id=""> -->
+                        <h2>书籍列表</h2>
+                    </div>
+                    <div class="bookListTable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>书籍图片</th>
+                                    <th>书籍名称</th>
+                                    <th>书籍分类</th>
+                                    <th>书籍原价</th>
+                                    <th>书籍现价</th>
+                                    <th>书籍简介</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody id="booktbody">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="menuContents userList" style="display: none;">
+                <div class="userListTitle">
+                    <span><i class="iconfont icon-yonghu"></i>用户管理</span>
+                </div>
+                <div class="userListMain">
+                    <div class="userListBtn">
+                        <!-- <button class="delAll">批量删除</button> -->
+
+                        <h2>会员信息列表</h2>
+                    </div>
+                    <div class="userListTable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>用户账号</th>
+                                    <th>用户状态</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody id="userTbody">
+                                <!-- <tr>
+                                    <td>1</td>
+                                    <td>
+                                        1111111111111
+                                    </td>
+                                    <td>
+                                        1111
+                                    </td>
+                                    <td><button>封禁</button></td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

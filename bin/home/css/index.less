@@ -1,0 +1,334 @@
+@themeColor:#FF2832;
+
+
+
+#bodyMain {
+    margin-bottom: 10px;
+    height: 490px;
+    // overflow: hidden;
+    .mainLeft{
+        float: left;
+        width: 191px;
+        height: 100%;
+        border-radius: 5px 5px 0 0;
+        border: 1px solid #487a6f;
+        border-top: 0;
+        overflow: hidden;
+        #mainLeftTop{
+            height: 35px;
+            line-height: 34px;
+            text-align: center;
+            background-color: #487A6F;
+            color: #fff;
+            font-size: 18px;
+            border-bottom: 2px dotted #000;
+        }
+        #mainLeftBot{
+            height: 500px;
+            ul{
+                .mainMenuLi{
+                    margin: 0 12px;
+                    line-height: 12px;
+                    padding: 10px 0;
+                    font-weight: 600;
+                    color: #487a6f;
+                    font-size: 14px;
+                    border-bottom: 1px dotted #000;
+                    overflow: hidden;
+                }
+                .mainMenuLi:last-child{
+                    border: 0;
+                }
+                .changeColor:hover{
+                    color: #ec7814;
+                }
+                .smallInner:last-child{
+                    border: 0;
+                }
+                .smallInner{
+                    float: left;
+                    color: gray;
+                    font-size: 12px;
+                    font-weight: normal;
+                    padding:0 3px;
+                    line-height: 10px;
+                    margin-top: 10px;
+                }
+                .smallInner:hover{
+                    color: #ec7814;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .mainCenter{
+        float: left;
+        width: 750px;
+        height: 100%;
+        margin-left: 10px;
+        .mainCenterTop{
+            position: relative;
+            width: 750px;
+            height: 315px;
+            //background-color: pink;
+            cursor: pointer;
+            .bannerImg{
+
+            }
+            .arrow-l,.arrow-r {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 25px;
+                height: 50px;
+                background: url(../image/book_fanye_btn.png) 0 0 no-repeat;
+            }
+            .arrow-r{
+                right:0;
+                background-position: -26px 0;
+            }
+            .arrow-l:hover{
+                background-position: 0 -51px;
+            }
+            .arrow-r:hover{
+                background-position: -26px -51px;
+            }
+            .circle{
+                position: absolute;
+                bottom: 12px;
+                right: 25px;
+                li{
+                    width: 22px;
+                    height: 22px;
+                    line-height: 22px;
+                    text-align: center;
+                    float: left;
+                    margin-right: 5px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    font-size: 14px;
+                    color: #000;
+                    opacity: .6;
+                }
+                .current{
+                    background-color: @themeColor;
+                    color: #fff;
+                    opacity: 1;
+                }
+                
+            }
+        }
+        .mainCenterBot{
+            .adTitle{
+                width: 100%;
+                line-height: 40px;
+                margin-bottom: 10px;
+                border-bottom: 2px dotted #000;
+                color: #487A6F;
+                font-weight: 700;
+                font-size: 20px;
+            }
+            .ad{
+                img{
+                    border-radius: 5px;
+                }
+                img:nth-child(2){
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+    .mainRight{
+        float: right;
+        width: 240px;
+        height: 100%;
+        // background-color: pink;
+        // background-color: green;
+        .rightTop{
+            height: 40px;
+            line-height: 40px;
+            padding-left: 35px;
+            background: url(../image/sprite.png) no-repeat 5px 4px;
+            font-size: 16px;
+            color: #000;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .rightBot{
+            // height: 475px;
+            // background-color: skyblue;
+            border: 1px solid #eaeaea;
+            border-top: 0;
+            #rightBotTitle{
+                height: 28px;
+                overflow: hidden;
+                
+                .rightBotTitles{
+                    float: left;
+                    border: 1px solid #EAEAEA;
+                    border-right: 0;
+                    width: 46.6px;
+                    font-size: 13px;
+                    text-align: center;
+                    line-height: 26px;
+                }
+                .titleCurrent{
+                    color: #487A6F;
+                    font-weight: 600;
+                    border-top: 2px solid #487A6F;
+                    border-bottom: 0;
+                }
+            }
+            #rightBotMain{
+                .rightBotMains{
+                    ul{
+                        li{
+                            height: 38px;
+                            line-height: 38px;
+                            margin: 2px 15px;
+                            border-bottom: 1px solid #eaeaea;
+                            cursor: pointer;
+                            .num{
+                                float: left;
+                                width: 36px;
+                                height: 36px;
+                                text-align: center;
+                                color: #000;
+                                font-weight: 600;
+
+                            }
+                            .title{
+                                float: left;
+                                width: 165px;
+                                font-size: 14px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+
+                            }
+                            
+                        }
+                        li:last-child{
+                            border: 0;
+                        }
+                        li:nth-of-type(-n+3) .num{
+                            color: @themeColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+#mainBott{
+    height: 600px;
+    width: 100%;
+    margin-top: 50px;
+    #mainBotTitle{
+        height: 50px;
+        border-bottom: 1px solid #487A6F;
+        position: relative;
+        .titleLogo{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 50px;
+            width: 108px;
+            line-height: 0;
+            font-size: 0;
+            background: url(../image/title_sprite.png) 0 0 no-repeat;;
+        }
+        ul{
+            position: absolute;
+            left: 150px;
+            // bottom: -4px;
+            top: 18px;
+            
+            .mainBotTitles{
+                float: left;
+                padding: 2px 20px;
+                line-height: 32px;
+                color: #666;
+                font-size: 14px;
+                // margin-right: 4px;
+            }
+            .titleCurrent{
+                border-radius: 6px 6px 0 0;
+                border: 2px solid #487a6f;
+                border-bottom: none;
+                color: #4e8176;
+                background: #fff;
+                padding: 0 15px;
+                font-weight: bold;
+                height: 31px;
+    
+            }
+        }
+    }
+    #mainBotInner{
+        // background-color: pink;
+        
+        clear: both;
+        height: 540px;
+        .mianBotInners{
+            ul{
+                padding-top: 20px;
+                li{
+                    float: left;
+                    width: 220px;
+                    height: 270px;
+                    margin-right: 20px;
+                    padding: 0 10px 30px 10px;
+                    box-sizing: border-box;
+                    text-align: center;
+                    cursor: pointer;
+                    img{
+                        display: block;
+                        width: 150px;
+                        height: 150px;
+                        margin: 0 auto;
+                    }
+                    .goodsName{
+                        padding: 7px 20px 0;
+                        height: 18px;
+                        line-height: 18px;
+                        overflow: hidden;
+                        a{
+                            color: #000;
+                            font-size: 14px;
+                        }
+                    }
+                    .numlogo{
+                        margin: 5px 0;
+                       span{
+                        padding: 5px 25px 2px 46px;
+                        background: url(../image/sprite.png) 20px -86px no-repeat;
+                        height: 16px;
+                        line-height: 16px;
+                        // display: block;
+                        color: #5b877e;
+                        font-size: 14px;
+                        margin: 5px 0;
+                       }
+                    }
+                    .price{
+                        font-size: 14px;
+                        .newPrice{
+                            color: #CC3300;
+                            font-weight: 600;
+                        }
+                        .oldPrice{
+                            text-decoration: line-through;
+                            color: #AAAAAA;
+                        }
+                    }
+                }
+                li:hover{
+                    border: 2px solid #487A6F;
+                }
+            }
+        }
+    }
+}
+

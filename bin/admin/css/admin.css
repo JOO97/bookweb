@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input,
+button,
+textarea {
+  outline: 0;
+  padding: 0 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #8A9B97;
+}
+body {
+  background-color: #f6f6f6;
+  overflow-y: auto;
+}
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+.mask .prompt {
+  position: absolute;
+  width: 350px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.mask .prompt .promptTitle {
+  background-color: #44495C;
+  line-height: 50px;
+  color: #fff;
+  padding-left: 20px;
+  font-size: 18px;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 4px solid #5FB878;
+}
+.mask .prompt .promptBtn {
+  padding: 34px;
+}
+.mask .prompt .promptBtn .yes {
+  color: #fff;
+  padding: 10px 40px;
+  background-color: #D9534F;
+  border: 1px solid #D43F3A;
+  border-radius: 10px;
+  margin-right: 45px;
+  font-size: 16px;
+}
+.mask .prompt .promptBtn .cancel {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 40px;
+  background-color: #5CB85C;
+  border: 1px solid #4CAE4C;
+  border-radius: 10px;
+}
+.mask2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #97AAA2, #35384F);
+  z-index: 999;
+}
+.mask2 .prompt2 {
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding-top: 20px;
+}
+.mask2 .prompt2 .prompt2Title {
+  color: #D9534F;
+  font-weight: 700;
+  font-size: 30px;
+}
+.mask2 .prompt2 .prompt2Title2 {
+  font-size: 20px;
+  color: #000;
+  margin-top: 10px;
+}
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 43px;
+  line-height: 43px;
+  z-index: 2;
+  background-color: #44495C;
+  border-bottom: 4px solid #5FB878;
+}
+.top .topRight {
+  float: right;
+}
+.top .topRight li {
+  float: left;
+  padding: 0 15px;
+}
+.top .topRight li span {
+  color: #2B3C53;
+}
+.top .topRight li:nth-child(n+2):hover {
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 4px solid #fff;
+}
+.center {
+  margin-top: 47px;
+  position: relative;
+}
+.center .menu {
+  width: 240px;
+  height: 650px;
+  background-image: linear-gradient(45deg, #97AAA2, #35384F);
+}
+.center .menu .menuTop {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 30px 20px;
+}
+.center .menu .menuTop p {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.4);
+}
+.center .menu .menuBot .menuTitles {
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  padding: 10px 0;
+  color: #fff;
+  cursor: pointer;
+}
+.center .menu .menuBot .menuTitles i {
+  font-size: 20px;
+}
+.center .menu .menuBot .current {
+  background-color: #383B51;
+  position: relative;
+}
+.center .menu .menuBot .current::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  border-left: 5px solid #5FB878;
+}
+.center .content {
+  position: absolute;
+  left: 240px;
+  top: 0px;
+}
+.center .content .menuContents {
+  height: 600px;
+  width: 1000px;
+}
+.center .content .menuContents::-webkit-scrollbar {
+  width: 8px;
+}
+.center .content .menuContents::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.center .content .index .indexTitle {
+  height: 45px;
+  background-color: #EFEEF0;
+  border-bottom: 2px solid #E6E6E6;
+}
+.center .content .index .indexTitle span {
+  float: left;
+  margin-left: 5px;
+  line-height: 44px;
+  padding: 0 20px;
+  background-color: #fff;
+  border: 1px solid #E6E6E6;
+  border-bottom: 0;
+  font-size: 20px;
+}
+.center .content .index .msg {
+  margin: 20px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 8px;
+  padding-left: 15px;
+}
+.center .content .index .msg .msg1 {
+  background-color: #F2F2F2;
+  border-left: 4px solid #009688;
+  line-height: 44px;
+}
+.center .content .index .msg .msg1 i {
+  margin-left: 10px;
+}
+.center .content .index .msg .msg1 .welcome {
+  color: #FF0000;
+  margin-left: 0;
+  font-weight: 600;
+}
+.center .content .index .msg3 {
+  background-color: #fff;
+  height: 150px;
+  margin: 20px;
+  padding: 15px;
+}
+.center .content .index .msg3 .msg3Title {
+  border-bottom: 1px solid #F6F6F6;
+  border-left: 4px solid #009688;
+  line-height: 40px;
+  padding-left: 8px;
+}
+.center .content .index .msg3 .msg3Content {
+  margin-top: 10px;
+  border: 1px solid #E6E6E6;
+  border-bottom: 0;
+}
+.center .content .index .msg3 .msg3Content li {
+  border-bottom: 1px solid #E6E6E6;
+  line-height: 40px;
+  padding-left: 12px;
+  font-size: 18px;
+  color: #009688;
+}
+.center .content .index .msg3 .msg3Content li:hover {
+  background-color: rgba(207, 207, 207, 0.6);
+}
+.center .content .index .msg2 {
+  background-color: #fff;
+  margin: 20px;
+  padding: 10px;
+}
+.center .content .index .msg2 .msg2Title {
+  border-bottom: 1px solid #F6F6F6;
+  border-left: 4px solid #009688;
+  line-height: 40px;
+  padding-left: 8px;
+}
+.center .content .index .msg2 .msg2Content {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 90px;
+  margin-top: 10px;
+}
+.center .content .index .msg2 .msg2Content .msg2Contents {
+  flex: 1;
+  background-color: #F8F8F8;
+  margin-left: 6px;
+  padding: 7px 0 0 14px;
+}
+.center .content .index .msg2 .msg2Content .msg2Contents h5 {
+  color: #BFBFBF;
+  font-weight: normal;
+  font-size: 14px;
+}
+.center .content .index .msg2 .msg2Content .msg2Contents h4 {
+  margin-top: 10px;
+  color: #009688;
+  font-size: 28px;
+  font-weight: normal;
+}
+.center .content .index .msg2 .msg2Content .msg2Contents:hover {
+  background-color: rgba(207, 207, 207, 0.6);
+}
+.center .content .bookUpload {
+  padding: 20px 0 30px 70px;
+  box-sizing: border-box;
+}
+.center .content .bookUpload h2 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+.center .content .bookUpload .title {
+  margin-bottom: 20px;
+}
+.center .content .bookUpload .title #bookTitle {
+  width: 450px;
+  height: 35px;
+  margin-left: 15px;
+}
+.center .content .bookUpload .introduction {
+  margin-bottom: 20px;
+}
+.center .content .bookUpload .introduction #bookInt {
+  width: 450px;
+  height: 35px;
+  margin-left: 15px;
+}
+.center .content .bookUpload .priceBox {
+  margin-bottom: 20px;
+}
+.center .content .bookUpload .priceBox #presentPrice {
+  width: 150px;
+  height: 35px;
+  margin-left: 15px;
+  margin-right: 40px;
+}
+.center .content .bookUpload .priceBox #price {
+  width: 150px;
+  height: 35px;
+  margin-left: 15px;
+}
+.center .content .bookUpload .sort {
+  margin-bottom: 20px;
+}
+.center .content .bookUpload .sort select {
+  margin-left: 15px;
+  height: 35px;
+  outline-color: #383B51;
+}
+.center .content .bookUpload .bookImgBox {
+  margin-bottom: 20px;
+}
+.center .content .bookUpload .bookImgBox label {
+  position: relative;
+  margin-right: 15px;
+}
+.center .content .bookUpload .bookImgBox label input {
+  z-index: 999;
+  border: 0;
+  position: relative;
+  background-color: pink;
+  width: 100px;
+  height: 36px;
+  cursor: pointer;
+  opacity: 0;
+}
+.center .content .bookUpload .bookImgBox label button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 110px;
+  padding: 8px 0;
+}
+.center .content .bookUpload .infoBox #bookInfo {
+  width: 450px;
+  height: 100px;
+  margin-left: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
+  vertical-align: top;
+  resize: none;
+}
+.center .content .bookUpload .infoBox #uploadBtn {
+  width: 120px;
+  height: 40px;
+  vertical-align: bottom;
+  margin-left: 40px;
+  background-color: #5FB878;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border: 2px solid rgba(68, 73, 92, 0.4);
+}
+.center .content .bookList {
+  overflow: scroll;
+}
+.center .content .bookList .bookListTitle {
+  height: 45px;
+  background-color: #EFEEF0;
+  border-bottom: 2px solid #E6E6E6;
+}
+.center .content .bookList .bookListTitle span {
+  float: left;
+  margin-left: 5px;
+  line-height: 44px;
+  padding: 0 20px;
+  background-color: #fff;
+  border: 1px solid #E6E6E6;
+  border-bottom: 0;
+  font-size: 20px;
+}
+.center .content .bookList .bookListMain {
+  background-color: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 10px 120px;
+  margin-top: 5px;
+}
+.center .content .bookList .bookListMain .bookListBtn {
+  height: 40px;
+  border-bottom: 1px solid #F6F6F6;
+  margin-bottom: 8px;
+}
+.center .content .bookList .bookListMain .bookListBtn h2 {
+  text-align: center;
+}
+.center .content .bookList .bookListMain .bookListTable table {
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+  width: 900px;
+}
+.center .content .bookList .bookListMain .bookListTable table tr td,
+.center .content .bookList .bookListMain .bookListTable table tr th:nth-child(2) {
+  width: 200px;
+}
+.center .content .bookList .bookListMain .bookListTable table tr td:nth-child(2) img {
+  width: 150px;
+}
+.center .content .bookList .bookListMain .bookListTable table th,
+.center .content .bookList .bookListMain .bookListTable table td {
+  padding: 8px 0;
+  border: 1px solid #eee;
+}
+.center .content .bookList .bookListMain .bookListTable table tbody tr:hover {
+  background-color: rgba(207, 207, 207, 0.6);
+}
+.center .content .bookList .bookListMain .bookListTable table th {
+  background-color: #f7f7f7;
+  color: #5c6b77;
+  font-weight: 600;
+}
+.center .content .bookList .bookListMain .bookListTable table .delBook {
+  background-color: #D9534F;
+  border: 0;
+  padding: 6px 8px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.center .content .userList {
+  overflow: scroll;
+}
+.center .content .userList .userListTitle {
+  height: 45px;
+  background-color: #EFEEF0;
+  border-bottom: 2px solid #E6E6E6;
+}
+.center .content .userList .userListTitle span {
+  float: left;
+  margin-left: 5px;
+  line-height: 44px;
+  padding: 0 20px;
+  background-color: #fff;
+  border: 1px solid #E6E6E6;
+  border-bottom: 0;
+  font-size: 20px;
+}
+.center .content .userList .userListMain {
+  background-color: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 10px 120px;
+  margin-top: 5px;
+}
+.center .content .userList .userListMain .userListBtn {
+  height: 40px;
+  border-bottom: 1px solid #F6F6F6;
+  margin-bottom: 8px;
+}
+.center .content .userList .userListMain .userListBtn h2 {
+  text-align: center;
+}
+.center .content .userList .userListMain .userListTable table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+}
+.center .content .userList .userListMain .userListTable table th,
+.center .content .userList .userListMain .userListTable table td {
+  padding: 10px 0;
+  border: 1px solid #eee;
+}
+.center .content .userList .userListMain .userListTable table thead {
+  background-color: #F7F7F7;
+}
+.center .content .userList .userListMain .userListTable table tbody tr:hover {
+  background-color: rgba(207, 207, 207, 0.6);
+}
+.center .content .userList .userListMain .userListTable table tbody td input {
+  border: 0;
+  padding: 8px 12px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -1,0 +1,275 @@
+input,
+button {
+  outline: 0;
+  border: 0;
+}
+#bookPageMain {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#bookPageMain #bookMainTop {
+  height: 365px;
+}
+#bookPageMain #bookMainTop .bookImg {
+  float: left;
+  width: 365px;
+  height: 365px;
+  position: relative;
+}
+#bookPageMain #bookMainTop .bookImg .bookImgs {
+  width: 100%;
+}
+#bookPageMain #bookMainTop .bookImg .mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: url(../image/zoom_pup.png) 0 0 no-repeat;
+  cursor: move;
+}
+#bookPageMain #bookMainTop .bookImg .bigImg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 380px;
+  width: 435px;
+  height: 435px;
+  overflow: hidden;
+  border: 1px solid #000;
+  z-index: 1;
+}
+#bookPageMain #bookMainTop .bookImg .bigImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#bookPageMain #bookMainTop .bookInfo {
+  overflow: hidden;
+  padding: 16px 10px 10px 30px;
+}
+#bookPageMain #bookMainTop .bookInfo .booksInfo h1 {
+  line-height: 24px;
+  max-height: 48px;
+  overflow: hidden;
+  color: #323232;
+  font-size: 22px;
+  margin: 0 auto;
+}
+#bookPageMain #bookMainTop .bookInfo .booksInfo h1 img {
+  height: 24px;
+  vertical-align: middle;
+}
+#bookPageMain #bookMainTop .bookInfo .booksInfo h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 20px 0 30px 0;
+  line-height: 25px;
+}
+#bookPageMain #bookMainTop .bookInfo .booksInfo .bookPrice {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+#bookPageMain #bookMainTop .bookInfo .booksInfo .bookPrice .newPrice {
+  font-size: 30px;
+  color: #E52222;
+  margin-right: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+#bookPageMain #bookMainTop .bookInfo .booksInfo .bookPrice .oldPrice {
+  color: #B1B1B0;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+#bookPageMain #bookMainTop .bookInfo .bookInfoBot {
+  background-color: #FCFAF7;
+  height: 143px;
+  position: relative;
+}
+#bookPageMain #bookMainTop .bookInfo .bookInfoBot .booksNum {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  height: 46px;
+  line-height: 46px;
+  border: 1px solid #e9e9e9;
+  width: 50px;
+  padding-right: 30px;
+  position: relative;
+}
+#bookPageMain #bookMainTop .bookInfo .bookInfoBot .booksNum .num {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  text-align: center;
+}
+#bookPageMain #bookMainTop .bookInfo .bookInfoBot .booksNum .booksAdd,
+#bookPageMain #bookMainTop .bookInfo .bookInfoBot .booksNum .booksSub {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 22px;
+  background-color: #E9E9E9;
+  cursor: pointer;
+}
+#bookPageMain #bookMainTop .bookInfo .bookInfoBot .booksNum .booksAdd {
+  top: 0;
+}
+#bookPageMain #bookMainTop .bookInfo .bookInfoBot .booksNum .booksSub {
+  bottom: 0;
+}
+#bookPageMain #bookMainTop .bookInfo .bookInfoBot .buyBtn,
+#bookPageMain #bookMainTop .bookInfo .bookInfoBot .buy {
+  position: absolute;
+  width: 150px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+#bookPageMain #bookMainTop .bookInfo .bookInfoBot .buyBtn {
+  top: 20px;
+  left: 142px;
+  background-color: #FFEDEE;
+  border: 1px solid #E52222;
+  color: #FF2832;
+}
+#bookPageMain #bookMainTop .bookInfo .bookInfoBot .buyBtn:hover {
+  opacity: 0.9;
+}
+#bookPageMain #bookMainTop .bookInfo .bookInfoBot .buy {
+  top: 85px;
+  left: 142px;
+  background-color: #e52222;
+}
+#bookPageMain #bookMainTop .bookInfo .bookInfoBot .qrcode {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 270px;
+  height: 143px;
+}
+#bookPageMain #bookMainTop .bookInfo .bookInfoBot .qrcode img {
+  width: 100%;
+}
+#bookPageMain #bookMainBot {
+  margin-top: 30px;
+}
+#bookPageMain #bookMainBot .bookMainBotTitle {
+  height: 42px;
+  border-bottom: 1px solid #000;
+}
+#bookPageMain #bookMainBot .bookMainBotTitle .bookMainBotTitles {
+  float: left;
+  padding: 8px 30px 12px 30px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+#bookPageMain #bookMainBot .bookMainBotTitle .bookMainBotTitleCurrent {
+  color: #E52222;
+  border: 2px solid #000;
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  background-color: #fff;
+}
+#bookPageMain #bookMainBot .bookMainBotContent {
+  clear: both;
+  margin-top: 10px;
+}
+#bookPageMain #bookMainBot .booksDetail .booksDetailImg {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+#bookPageMain #bookMainBot .booksDetail .booksDetailImg .booksDetailImgTitle {
+  height: 36px;
+  margin-left: 10px;
+  border-left: 4px solid #FF2832;
+  border-bottom: 1px solid #E5E5E5;
+}
+#bookPageMain #bookMainBot .booksDetail .booksDetailImg .booksDetailImgTitle span {
+  line-height: 36px;
+  float: left;
+  background-color: #E5E5E5;
+  padding: 0 10px;
+  position: relative;
+}
+#bookPageMain #bookMainBot .booksDetail .booksDetailImg .booksDetailImgTitle span::after {
+  content: '';
+  position: absolute;
+  right: -18px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent transparent #e5e5e5;
+  border-style: solid;
+  border-width: 36px 0 0 18px;
+}
+#bookPageMain #bookMainBot .booksDetail .booksDetailImg .booksDetailImgCon {
+  padding-top: 15px;
+  width: 800px;
+  margin: 0 auto;
+}
+#bookPageMain #bookMainBot .booksDetail .booksDetailImg .booksDetailImgCon img {
+  width: 100%;
+}
+#bookPageMain #bookMainBot .booksDetail .bookDetailInfo {
+  margin-top: 10px;
+  padding: 0 20px;
+}
+#bookPageMain #bookMainBot .booksDetail .bookDetailInfo .bookDetailInfoTitle {
+  height: 36px;
+  margin-left: 10px;
+  border-left: 4px solid #FF2832;
+  border-bottom: 1px solid #E5E5E5;
+}
+#bookPageMain #bookMainBot .booksDetail .bookDetailInfo .bookDetailInfoTitle span {
+  line-height: 36px;
+  float: left;
+  background-color: #E5E5E5;
+  padding: 0 10px;
+  position: relative;
+}
+#bookPageMain #bookMainBot .booksDetail .bookDetailInfo .bookDetailInfoTitle span::after {
+  content: '';
+  position: absolute;
+  right: -18px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent transparent #e5e5e5;
+  border-style: solid;
+  border-width: 36px 0 0 18px;
+}
+#bookPageMain #bookMainBot .booksDetail .bookDetailInfo .booksDetailInfoCon #bookWebInfo {
+  padding: 15px;
+  line-height: 28px;
+}
+#bookPageMain #bookMainBot .comments {
+  margin-top: 10px;
+}
+#bookPageMain #bookMainBot .comments .commentsTitle {
+  height: 45px;
+  line-height: 45px;
+  background-color: #F0F0F0;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  padding-left: 56px;
+}
+#bookPageMain #bookMainBot .comments .commentsTitle .commentsTitles {
+  float: left;
+  margin-right: 60px;
+  font-size: 14px;
+  color: #646464;
+}
+#bookPageMain #bookMainBot .comments .commentsTitle .commentsCurrent {
+  color: #FF2832;
+}

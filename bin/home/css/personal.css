@@ -1,0 +1,281 @@
+body {
+  background-color: #F5F8FA;
+}
+.mask2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #97AAA2, #35384F);
+  z-index: 999;
+}
+.mask2 .prompt2 {
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding-top: 35px;
+  box-sizing: border-box;
+}
+.mask2 .prompt2 .prompt2Title {
+  color: #D9534F;
+  font-weight: 600;
+  font-size: 20px;
+}
+.mask2 .prompt2 .prompt2Title2 {
+  font-size: 20px;
+  color: #000;
+  margin-top: 10px;
+}
+.adBanner {
+  width: 1200px;
+  height: 60px;
+}
+.adBanner img {
+  width: 100%;
+}
+button {
+  outline: 0;
+  border: 0;
+}
+.current {
+  color: #000 !important;
+  background-color: #fff;
+}
+.personalMain {
+  width: 100%;
+  height: 600px;
+  margin: 10px 0 20px;
+}
+.personalMain .leftMain {
+  float: left;
+  width: 240px;
+  height: 100%;
+  background-color: #2B2B2B;
+}
+.personalMain .leftMain .leftMainTop {
+  height: 150px;
+  line-height: 150px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.personalMain .leftMain .leftMainTop .leftName {
+  font-size: 40px;
+  color: #FF2832;
+}
+.personalMain .leftMain .leftMainTitle ul {
+  padding-left: 20px;
+}
+.personalMain .leftMain .leftMainTitle ul li {
+  text-align: center;
+  width: 100%;
+  line-height: 60px;
+  font-size: 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #fff;
+}
+.personalMain .rightMain {
+  float: right;
+  width: 960px;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 30px 35px;
+}
+.personalMain .rightMain .rightMains {
+  box-sizing: border-box;
+  display: none;
+}
+.personalMain .rightMain .profile {
+  display: none;
+}
+.personalMain .rightMain .profile h2 {
+  padding: 5px 0 8px;
+  border-bottom: 2px solid #DDDDDD;
+  position: relative;
+}
+.personalMain .rightMain .profile h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 95px;
+  height: 2px;
+  background-color: #FF2832;
+}
+.personalMain .rightMain .profile .moneyBox {
+  height: 300px;
+  width: 100%;
+  background-color: #fff;
+  padding: 50px 0 0 200px;
+}
+.personalMain .rightMain .profile .moneyBox .moneyBoxText {
+  padding: 20px 0 20px 15px;
+  font-size: 20px;
+}
+.personalMain .rightMain .profile .moneyBox .moneyBoxText #myMoney {
+  color: #FF2832;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.personalMain .rightMain .profile .moneyBox .moneyRecharge {
+  padding: 20px 0 20px 15px;
+  font-size: 20px;
+}
+.personalMain .rightMain .profile .moneyBox .moneyRecharge #getMoney {
+  padding: 8px 10px;
+  margin-left: 20px;
+}
+.personalMain .rightMain .profile .moneyBox .moneyRecharge i {
+  color: #ff2832;
+  margin-left: 10px;
+}
+.personalMain .rightMain .profile .moneyBox .moneyRecharge .msg {
+  font-size: 16px;
+}
+.personalMain .rightMain .profile .moneyBox #moneyBtn {
+  margin-top: 15px;
+  margin-left: 210px;
+  padding: 8px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  background-color: #FF2832;
+  color: #fff;
+  cursor: pointer;
+}
+.personalMain .rightMain .profile .moneyBox #moneyBtn:hover {
+  opacity: 0.8;
+}
+.personalMain .rightMain .myOrder {
+  position: relative;
+}
+.personalMain .rightMain .myOrder .myOrderTitle li {
+  float: left;
+  padding: 14px 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.personalMain .rightMain .myOrder .myOrderTitle .select {
+  position: relative;
+}
+.personalMain .rightMain .myOrder .myOrderTitle .select::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 105px;
+  height: 3px;
+  background-color: #FF2832;
+}
+.personalMain .rightMain .myOrder .orderHandleTitle {
+  position: absolute;
+  right: 52px;
+  top: 14px;
+  font-size: 16px;
+}
+.personalMain .rightMain .myOrder .orderHandleTitle::after {
+  content: '';
+  position: absolute;
+  left: -18px;
+  bottom: -16px;
+  width: 105px;
+  height: 3px;
+  background-color: #FF2832;
+}
+.personalMain .rightMain .myOrder .myOrderContent {
+  overflow-y: auto;
+  height: 480px;
+  width: 100%;
+}
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents {
+  padding: 10px;
+}
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList .none {
+  width: 100%;
+  height: 300px;
+  margin-top: 15px;
+  text-align: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList .none h2 {
+  margin-top: 15px;
+  color: #B2B2B2;
+}
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList .none h2 a {
+  color: #ff2832;
+  font-weight: 600;
+}
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList li:last-child {
+  border-bottom: 0;
+}
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList li {
+  padding: 10px;
+  height: 100px;
+  width: 95%;
+  margin: 0 auto 8px;
+  background-color: #fff;
+  position: relative;
+  border-bottom: 2px solid #DDDDDD;
+}
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList li .num {
+  float: left;
+  margin-right: 30px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList li .goodListImg {
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+}
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList li .goodListTitle {
+  padding: 5px 0;
+  width: 450px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList li .goodListPrice {
+  font-size: 16px;
+}
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList li .goodListPrice .priceSpan {
+  color: #FF2832;
+  font-weight: 600;
+}
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList li .orderInfo {
+  margin-top: 10px;
+  color: #969696;
+}
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList li .orderInfo .orderID {
+  margin-right: 5px;
+}
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList li .buyBtn,
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList li .shouhuoBtn,
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList li .commentBtn,
+.personalMain .rightMain .myOrder .myOrderContent .myOrderContents .goodList li .deleteBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  padding: 8px 14px;
+  background-color: #FF2832;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}

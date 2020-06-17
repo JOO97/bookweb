@@ -1,0 +1,295 @@
+#bodyMain {
+  margin-bottom: 10px;
+  height: 490px;
+}
+#bodyMain .mainLeft {
+  float: left;
+  width: 191px;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #487a6f;
+  border-top: 0;
+  overflow: hidden;
+}
+#bodyMain .mainLeft #mainLeftTop {
+  height: 35px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #487A6F;
+  color: #fff;
+  font-size: 18px;
+  border-bottom: 2px dotted #000;
+}
+#bodyMain .mainLeft #mainLeftBot {
+  height: 500px;
+}
+#bodyMain .mainLeft #mainLeftBot ul .mainMenuLi {
+  margin: 0 12px;
+  line-height: 12px;
+  padding: 10px 0;
+  font-weight: 600;
+  color: #487a6f;
+  font-size: 14px;
+  border-bottom: 1px dotted #000;
+  overflow: hidden;
+}
+#bodyMain .mainLeft #mainLeftBot ul .mainMenuLi:last-child {
+  border: 0;
+}
+#bodyMain .mainLeft #mainLeftBot ul .changeColor:hover {
+  color: #ec7814;
+}
+#bodyMain .mainLeft #mainLeftBot ul .smallInner:last-child {
+  border: 0;
+}
+#bodyMain .mainLeft #mainLeftBot ul .smallInner {
+  float: left;
+  color: gray;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 0 3px;
+  line-height: 10px;
+  margin-top: 10px;
+}
+#bodyMain .mainLeft #mainLeftBot ul .smallInner:hover {
+  color: #ec7814;
+  text-decoration: underline;
+}
+#bodyMain .mainCenter {
+  float: left;
+  width: 750px;
+  height: 100%;
+  margin-left: 10px;
+}
+#bodyMain .mainCenter .mainCenterTop {
+  position: relative;
+  width: 750px;
+  height: 315px;
+  background-color: pink;
+  cursor: pointer;
+}
+#bodyMain .mainCenter .mainCenterTop .arrow-l,
+#bodyMain .mainCenter .mainCenterTop .arrow-r {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 50px;
+  background: url(../image/book_fanye_btn.png) 0 0 no-repeat;
+}
+#bodyMain .mainCenter .mainCenterTop .arrow-r {
+  right: 0;
+  background-position: -26px 0;
+}
+#bodyMain .mainCenter .mainCenterTop .arrow-l:hover {
+  background-position: 0 -51px;
+}
+#bodyMain .mainCenter .mainCenterTop .arrow-r:hover {
+  background-position: -26px -51px;
+}
+#bodyMain .mainCenter .mainCenterTop .circle {
+  position: absolute;
+  bottom: 12px;
+  right: 25px;
+}
+#bodyMain .mainCenter .mainCenterTop .circle li {
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  float: left;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 14px;
+  color: #000;
+  opacity: 0.6;
+}
+#bodyMain .mainCenter .mainCenterTop .circle .current {
+  background-color: #FF2832;
+  color: #fff;
+  opacity: 1;
+}
+#bodyMain .mainCenter .mainCenterBot .adTitle {
+  width: 100%;
+  line-height: 40px;
+  margin-bottom: 10px;
+  border-bottom: 2px dotted #000;
+  color: #487A6F;
+  font-weight: 700;
+  font-size: 20px;
+}
+#bodyMain .mainCenter .mainCenterBot .ad img {
+  border-radius: 5px;
+}
+#bodyMain .mainCenter .mainCenterBot .ad img:nth-child(2) {
+  margin: 0 10px;
+}
+#bodyMain .mainRight {
+  float: right;
+  width: 240px;
+  height: 100%;
+}
+#bodyMain .mainRight .rightTop {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 35px;
+  background: url(../image/sprite.png) no-repeat 5px 4px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#bodyMain .mainRight .rightBot {
+  border: 1px solid #eaeaea;
+  border-top: 0;
+}
+#bodyMain .mainRight .rightBot #rightBotTitle {
+  height: 28px;
+  overflow: hidden;
+}
+#bodyMain .mainRight .rightBot #rightBotTitle .rightBotTitles {
+  float: left;
+  border: 1px solid #EAEAEA;
+  border-right: 0;
+  width: 46.6px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 26px;
+}
+#bodyMain .mainRight .rightBot #rightBotTitle .titleCurrent {
+  color: #487A6F;
+  font-weight: 600;
+  border-top: 2px solid #487A6F;
+  border-bottom: 0;
+}
+#bodyMain .mainRight .rightBot #rightBotMain .rightBotMains ul li {
+  height: 38px;
+  line-height: 38px;
+  margin: 2px 15px;
+  border-bottom: 1px solid #eaeaea;
+  cursor: pointer;
+}
+#bodyMain .mainRight .rightBot #rightBotMain .rightBotMains ul li .num {
+  float: left;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  color: #000;
+  font-weight: 600;
+}
+#bodyMain .mainRight .rightBot #rightBotMain .rightBotMains ul li .title {
+  float: left;
+  width: 165px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#bodyMain .mainRight .rightBot #rightBotMain .rightBotMains ul li:last-child {
+  border: 0;
+}
+#bodyMain .mainRight .rightBot #rightBotMain .rightBotMains ul li:nth-of-type(-n+3) .num {
+  color: #FF2832;
+}
+#mainBott {
+  height: 600px;
+  width: 100%;
+  margin-top: 50px;
+}
+#mainBott #mainBotTitle {
+  height: 50px;
+  border-bottom: 1px solid #487A6F;
+  position: relative;
+}
+#mainBott #mainBotTitle .titleLogo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 108px;
+  line-height: 0;
+  font-size: 0;
+  background: url(../image/title_sprite.png) 0 0 no-repeat;
+}
+#mainBott #mainBotTitle ul {
+  position: absolute;
+  left: 150px;
+  top: 18px;
+}
+#mainBott #mainBotTitle ul .mainBotTitles {
+  float: left;
+  padding: 2px 20px;
+  line-height: 32px;
+  color: #666;
+  font-size: 14px;
+}
+#mainBott #mainBotTitle ul .titleCurrent {
+  border-radius: 6px 6px 0 0;
+  border: 2px solid #487a6f;
+  border-bottom: none;
+  color: #4e8176;
+  background: #fff;
+  padding: 0 15px;
+  font-weight: bold;
+  height: 31px;
+}
+#mainBott #mainBotInner {
+  clear: both;
+  height: 540px;
+}
+#mainBott #mainBotInner .mianBotInners ul {
+  padding-top: 20px;
+}
+#mainBott #mainBotInner .mianBotInners ul li {
+  float: left;
+  width: 220px;
+  height: 270px;
+  margin-right: 20px;
+  padding: 0 10px 30px 10px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+}
+#mainBott #mainBotInner .mianBotInners ul li img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+#mainBott #mainBotInner .mianBotInners ul li .goodsName {
+  padding: 7px 20px 0;
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+}
+#mainBott #mainBotInner .mianBotInners ul li .goodsName a {
+  color: #000;
+  font-size: 14px;
+}
+#mainBott #mainBotInner .mianBotInners ul li .numlogo {
+  margin: 5px 0;
+}
+#mainBott #mainBotInner .mianBotInners ul li .numlogo span {
+  padding: 5px 25px 2px 46px;
+  background: url(../image/sprite.png) 20px -86px no-repeat;
+  height: 16px;
+  line-height: 16px;
+  color: #5b877e;
+  font-size: 14px;
+  margin: 5px 0;
+}
+#mainBott #mainBotInner .mianBotInners ul li .price {
+  font-size: 14px;
+}
+#mainBott #mainBotInner .mianBotInners ul li .price .newPrice {
+  color: #CC3300;
+  font-weight: 600;
+}
+#mainBott #mainBotInner .mianBotInners ul li .price .oldPrice {
+  text-decoration: line-through;
+  color: #AAAAAA;
+}
+#mainBott #mainBotInner .mianBotInners ul li:hover {
+  border: 2px solid #487A6F;
+}

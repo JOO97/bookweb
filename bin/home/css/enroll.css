@@ -1,0 +1,83 @@
+input {
+  border: 0;
+  outline: 0;
+}
+.enrollBox {
+  width: 800px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 40px auto;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+.enrollBox h2 {
+  margin-top: 30px;
+}
+.enrollBox form {
+  margin-top: 20px;
+}
+.enrollBox form .phoneNumber {
+  position: relative;
+}
+.enrollBox form .phoneNumber input {
+  width: 220px;
+  height: 40px;
+  border: 1px solid #eee;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.enrollBox form .psw {
+  margin-top: 30px;
+  position: relative;
+}
+.enrollBox form .psw input {
+  width: 220px;
+  height: 40px;
+  border: 1px solid #eee;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.enrollBox form .pswConfirm {
+  position: relative;
+  margin-top: 30px;
+}
+.enrollBox form .pswConfirm input {
+  width: 220px;
+  height: 40px;
+  border: 1px solid #eee;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.enrollBox form .submit {
+  margin-top: 30px;
+}
+.enrollBox form .submit input {
+  width: 292px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 20px;
+  background-color: #E52222;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.enrollBox form .info {
+  text-align: center;
+  margin-top: 10px;
+}
+.enrollBox form .info a {
+  color: #dedede;
+  font-weight: 600px;
+}
+.msgp,
+.msgpsw,
+.msgpsw2 {
+  position: absolute;
+  top: 10px;
+  left: 552px;
+  display: none;
+  color: #39BA36;
+}
